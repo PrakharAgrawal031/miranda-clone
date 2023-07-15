@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: EditorialNew;
+    src: url(assets/fonts/5f242a694256f02b944d5767_EditorialNew-Light.ttf);
+}
+@font-face {
+    font-family: CondMedium;
+    src: url(assets/fonts/5f242a69b1577e63266b4d72_DomaineDispCondMedium.ttf);
+}
+@font-face {
+    font-family: Canopee;
+    src: url(assets/fonts/616fd1dd00cf6c70f978fc69_Canopee.ttf);
+}
+
+.background-image{
+    background-image: url(assets/background.jpg);
+    opacity: .3;
+    background-position: 50%;
+    top:0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    z-index: 1;
+}
+
+#main{
+    font-family: Canopee;
+    width: 100vw;
+    height: 100vh;
+}
+
+#page1{
+    opacity: 1;
+}
+
+#nav{
+    height: 8vh;
+    border-bottom: 1px solid black;
+}
+
+#nav>h1{
+    color: black;
+
+    z-index: 2;
+    font-size: 4vh;
+}
