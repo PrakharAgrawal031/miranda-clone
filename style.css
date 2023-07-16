@@ -16,35 +16,159 @@
     src: url(assets/fonts/616fd1dd00cf6c70f978fc69_Canopee.ttf);
 }
 
-.background-image{
+/* .background-image{
     background-image: url(assets/background.jpg);
-    opacity: .3;
+    opacity: .5;
     background-position: 50%;
     top:0%;
     bottom: 0%;
     right: 0%;
     left: 0%;
     z-index: 1;
-}
+} */
 
 #main{
-    font-family: Canopee;
+
+    --font-color : #4b4945;
+    --back-color : #C2bbb1;
+
+    font-family: EditorialNew;
     width: 100vw;
     height: 100vh;
-}
-
-#page1{
-    opacity: 1;
+    background-color: var(--back-color);
+    overflow-x: hidden;
 }
 
 #nav{
     height: 8vh;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--font-color);
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-#nav>h1{
-    color: black;
+#nav-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .3;
+}
 
+#inner-nav{
+    color: var(--font-color);
     z-index: 2;
-    font-size: 4vh;
+    font-size: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0 30px;
+}
+
+#inner-nav>img{
+    height: 3vh;
+}
+
+#inner-nav>i{
+    font-size: 2vh;
+}
+
+#page1{
+    opacity: 1;
+    position: relative;
+    height: 100%;
+}
+
+#page1-back{
+    height: 100%;
+    opacity: .3;
+    position: absolute;
+    z-index: 1;
+}
+
+#page1-upper-3{
+    opacity: 1;
+    display: flex;
+    padding: 40px 20px;
+    z-index: 2;
+    width: 100%;
+
+}
+
+.u1{
+    width: 30%;
+    padding:0 50px;
+
+}
+
+.u1-img{
+    height: 11vw;
+    width: 29vw;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.u1-img>img{
+    width: 100%;
+    height: 100%;
+}
+
+.u1-img:hover img{
+    scale:1.1;
+}
+
+.u1>h3{
+    padding: 20px 0px;
+    font-family: Canopee;
+    font-size: 1.5vw;
+}
+
+.u1>h3>span{
+    background-color: #c03f13;
+    padding: 0.1vw 0.25vw 0;
+    border-radius: 2px;
+    color: var(--back-color);
+}
+
+.u1>p{
+    font-size: 1.2vw;
+    line-height: 1.5vw;
+    color: var(--font-color);
+}
+
+#elem2{
+    width: 25%;
+    /* padding:0 50px; */
+    border-left: 1px solid var(--font-color);
+    border-right: 1px solid var(--font-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#elem2>h2{
+    font-size: 4vw;
+    font-weight: 100;
+    font-family: Canopee;
+}
+
+#elem2>h3{
+    padding: 25px 0px;
+    font-size: 2.6vw;
+    font-weight: 100;
+    text-align: center;
+}
+
+#elem2>h6{
+    font-family: EditorialNew,sans-serif;
+    font-size: 1.2vw;
+    font-weight: 100;
+    color: var(--font-color);
+}
+
+#elem2>h6>b{
+    font-family: Canopee, sans-serif;
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: black;
 }
